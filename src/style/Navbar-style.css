@@ -1,0 +1,76 @@
+/* Navbar-style.css */
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 20px;
+    color: #fff; /* Text color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo Styling */
+  .navbar-logo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700; /* Gold color for logo */
+    margin: 0;
+  }
+  
+  /* Navbar Links Container */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Link Styling */
+  .navbar-links li {
+    display: inline-block;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff; /* White text for links */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Audiowide','serif';
+  }
+  
+  /* Hover Effects for Links */
+  .navbar-links a:hover {
+    background-color: #ffd700; /* Gold background on hover */
+    color: #333; /* Dark text color on hover */
+  }
+  
+  /* Active Link Styling */
+  .active-link {
+    background-color: #ffd700; /* Gold background for active link */
+    color: #333; /* Dark text for active link */
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar-links li {
+      display: block;
+    }
+  }
+  

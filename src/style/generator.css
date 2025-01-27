@@ -1,0 +1,63 @@
+.container3 {
+    height: 793px;
+    border: 3px solid black;
+    color: yellow;
+    background-image: url('/src/assets/home_bg.jpg');
+  }
+  
+  .subhead {
+    margin: 0 auto;
+    width: max-content;
+    font-size: larger;
+    color: silver;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+
+  .subhead>p{
+    margin-top: 5px;
+    font-family: 'Audiowide';
+  }
+  
+  .btn {
+    width: 150px;
+    height: 35px;
+    background-color: silver;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Audiowide';
+    margin-left: 55px;
+    padding-left: 5px;
+  }
+  
+  .chbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 4px;
+    border: 1px solid #2980b9;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  #passwordLength{
+    margin-left: 20px;
+    border-radius: 7px;
+  }
+
+  #password{
+    position: absolute;
+    left: 41%;
+    top: 60%;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: silver;
+    border-radius: 6px;
+    height: 50px;
+    width: 150px;
+    padding-left: 62px;
+    padding-top: 10px;
+  }
+  
