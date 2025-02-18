@@ -36,6 +36,7 @@
   font-weight: bolder;
 }
 
+/* ✅ Large Desktop Screens (1440px and above) */
 @media (min-width: 1440px) {
   .head {
     font-size: 90px;
@@ -50,6 +51,7 @@
   }
 }
 
+/* ✅ Standard Laptops & Small Desktops (1025px - 1439px) */
 @media (max-width: 1439px) {
   .head {
     font-size: 70px;
@@ -64,6 +66,7 @@
   }
 }
 
+/* ✅ Tablets (600px - 1024px) */
 @media (max-width: 1024px) {
   .head {
     font-size: 55px;
@@ -80,6 +83,7 @@
   }
 }
 
+/* ✅ Small Tablets & Large Phones (500px - 768px) */
 @media (max-width: 768px) {
   .head {
     font-size: 40px;
@@ -96,6 +100,7 @@
   }
 }
 
+/* ✅ Most Common Mobile Screens (375px - 500px) */
 @media (max-width: 500px) {
   .container1 {
     padding: 10px;
@@ -118,6 +123,7 @@
   }
 }
 
+/* ✅ Extra Small Phones (320px - 374px) */
 @media (max-width: 374px) {
   .head {
     font-size: 28px;
