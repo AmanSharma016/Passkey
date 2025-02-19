@@ -8,14 +8,10 @@
 }
 
 .container1 {
-  min-height: 100vh;
+  height: 94vh;
   background-image: url('/src/assets/home_bg.jpg');
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 20px;
 }
@@ -28,9 +24,13 @@
   margin-bottom: 20px;
 }
 
+p{
+  font-size: large;
+}
+
 .quote {
   color: yellow;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1.4vw, 1rem);
   font-weight: bolder;
   max-width: 80%;
   font-family: 'Audiowide', sans-serif;
@@ -51,6 +51,7 @@
 @media (max-width: 1024px) {
   .container1 {
     padding: 15px;
+    min-height: 94.7vh;
   }
 }
 
