@@ -33,6 +33,7 @@
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: bolder;
   max-width: 80%;
+  font-family: 'Audiowide', sans-serif;
   margin: 10px auto;
 }
 
@@ -43,6 +44,7 @@
   margin: 20px auto;
   font-family: 'Audiowide', sans-serif;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Responsive Adjustments */
