@@ -1,63 +1,110 @@
 .container3 {
-    height: 793px;
-    border: 3px solid black;
-    color: yellow;
-    background-image: url('/src/assets/home_bg.jpg');
-  }
-  
-  .subhead {
-    margin: 0 auto;
-    width: max-content;
-    font-size: larger;
-    color: silver;
-    padding-top: 10px;
-    font-weight: bold;
-  }
+  height: 100%;
+  /* border: 3px solid black; */
+  color: yellow;
+  background-image: url('/src/assets/home_bg.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
 
-  .subhead>p{
-    margin-top: 5px;
-    font-family: 'Audiowide';
-  }
-  
-  .btn {
-    width: 150px;
-    height: 35px;
-    background-color: silver;
-    cursor: pointer;
-    margin-top: 15px;
-    border-radius: 5px;
-    font-family: 'Audiowide';
-    margin-left: 55px;
-    padding-left: 5px;
-  }
-  
-  .chbox {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #3498db;
-    border-radius: 4px;
-    border: 1px solid #2980b9;
-    cursor: pointer;
-    margin-left: 20px;
-  }
+.head {
+  position: relative;
+  top: 1rem;
+  display: inline;
+  left: 2rem;
+}
 
-  #passwordLength{
-    margin-left: 20px;
-    border-radius: 7px;
-  }
+.subhead {
+  margin: 0 auto;
+  width: max-content;
+  font-size: larger;
+  color: silver;
+  padding-top: 10px;
+  font-weight: bold;
+}
 
-  #password{
-    position: absolute;
-    left: 41%;
-    top: 60%;
-    font-size: xx-large;
-    font-weight: bolder;
-    background-color: silver;
-    border-radius: 6px;
-    height: 50px;
-    width: 150px;
-    padding-left: 62px;
-    padding-top: 10px;
+.subhead > p {
+  margin-top: 5px;
+  font-family: 'Audiowide';
+}
+
+.btn {
+  width: 150px;
+  height: 35px;
+  background-color: silver;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-family: 'Audiowide';
+  margin-left: 55px;
+  padding-left: 5px;
+}
+
+/* Responsive Password Display */
+#password {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: silver;
+  border-radius: 5px;
+  height: 50px;
+  max-width: 15rem;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  margin: 10px auto;
+}
+
+/* Responsive Copy Button */
+.btn1 {
+  width: 150px;
+  height: 35px;
+  background-color: silver;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Audiowide';
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media(max-width:1024px){
+  .box1{
+    /* margin-top: 36rem; */
+    /* min-height: 100vh; */
   }
-  
+  .container3{
+    min-height: 96.65vh;
+  }
+}
+
+@media(max-width:768px){
+  .container3{
+    min-height: 87.38vh;
+  }
+}
+
+@media(max-width:480px){
+  .container3{
+    min-height: 85.79vh;
+    min-width: 25.7vh;
+  }
+}
+
+@media(max-width:390px){
+  .container3{
+    min-height: 84.6vh;
+  }
+}
+
+@media(min-width:1024px){
+  .container3{
+    min-height: 94vh;
+  }
+}
