@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/password-checker.css";
 
 const PasskeyAppChecker = () => {
+  const [text, setText] = useState(""); // State for input field
+  const [resultText, setResultText] = useState(""); // State for result text
+
   const countAndDisplay = () => {
-    //password checking logic
-    const passInput = document.getElementById("pass").value;
-    const resultElement = document.getElementById("result");
-    if (passInput.length < 8) {
-      resultElement.textContent = "Password is too short!";
+    if (text.trim().length < 8) {
+      setResultText("Password is too short!");
     } else {
-      resultElement.textContent = "Password looks strong!";
+      setResultText("Password looks strong!");
     }
   };
 
@@ -34,12 +34,20 @@ const PasskeyAppChecker = () => {
           </p>
         </div>
         <div className="res">
-          <input type="text" placeholder="Enter your password" id="pass" />
+          <input 
+            type="text" 
+            placeholder="Enter your password" 
+            id="pass" 
+            value={text} 
+            onChange={(e) => setText(e.target.value)}
+          />
           <button className="mit" onClick={countAndDisplay}>
             Submit
           </button>
         </div>
-        <span id="result" className="out"></span>
+
+        {/* Hide the span when there's no resultText */}
+        {resultText && <span id="result" className="out">{resultText}</span>}
       </div>
     </div>
   );

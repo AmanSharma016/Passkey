@@ -10,7 +10,6 @@ const PasswordGenerator = () => {
   const [password, setPassword] = useState("");
 
   const generatePassword = () => {
-    // Logic for generating password 
     let characters = "";
     if (includeCapitalLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     if (includeSmallLetters) characters += "abcdefghijklmnopqrstuvwxyz";
@@ -23,6 +22,11 @@ const PasswordGenerator = () => {
       generatedPassword += characters[randomIndex];
     }
     setPassword(generatedPassword);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(password);
+    alert("Password copied to clipboard!");
   };
 
   return (
@@ -87,7 +91,14 @@ const PasswordGenerator = () => {
               Generate Password
             </button>
           </div>
-          <span id="password">{password}</span>
+          <div>
+            <span id="password">{password}</span>
+            {password && (
+              <button className="btn1" onClick={copyToClipboard}>
+                Copy
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
